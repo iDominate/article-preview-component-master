@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Article preview component</title>
+
+
+</head>
+
+<body>
+
+
+  <main>
+    <div class="item-container">
+      <img src="./images/drawers.jpg" alt="img" width="200" height="238">
+      <div>
+        <h4>Shift the overall look and feel by</h4>
+        <h4>adding these wonderful
+          touches to</h4>
+        <h4>furniture in your home</h4>
+        <p>Ever been in a room and felt like something was missing?</p>
+        <p>Perhaps
+          it felt slightly bare and uninviting. I’ve got some</p>
+        <p> simple tips
+          to help you make any room feel complete.</p>
+        <img src="./images/avatar-michelle.jpg" alt="avatar" width="30" height="30">
+        <p>Michelle Appleton</p>
+        <p>28 Jun 2020</p>
+        <span class="img-container"><img src="./images/icon-share.svg" alt="" srcset=""></span>
+      </div>
+    </div>
+    </div>
+
+    <div class="options-container">
+      <div class="options">
+        <span>share</span>
+        <span>
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+          <span class="img-container-options"><img src="./images/icon-share.svg" alt="" srcset=""></span>
+        </span>
+
+      </div>
+      <div class="triangle"></div>
+    </div>
+  </main>
+
+  <!--   
+
+
+
+  
+  
+
+  Share
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('.img-container').hover(function () {
+        $('.options-container').css('visibility', 'visible')
+      }, function () {
+        $('.options-container').css('visibility', 'hidden')
+      })
+
+      $('.img-container-options').hover(function () {
+        $('.options-container').css('visibility', 'visible')
+      }, function () {
+        $('.options-container').css('visibility', 'hidden')
+      })
+
+    })
+  </script>
+</body>
+
+</html>

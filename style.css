@@ -1,0 +1,247 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.item-container {
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #ccc;
+    width: 493px;
+    height: 238px;
+}
+
+.item-container>img:first-of-type {
+    transform: translate(0px, -76px);
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.item-container>div {
+    display: inline-block;
+    transform: translate(10px, 31px);
+}
+
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h4:last-of-type {
+    margin-bottom: 20px;
+}
+
+.item-container>div {
+    transform: translate(10px, 10px);
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+p:first-of-type,
+p:nth-of-type(2),
+p:nth-of-type(3),
+p:nth-of-type(4) {
+    font-size: 10px;
+
+
+}
+
+.item-container>div>img:first-of-type {
+    border-radius: 50%;
+    transform: translate(10px, 10px);
+}
+
+p:nth-of-type(4) {
+    transform: translate(44px, -18px);
+}
+
+p:nth-of-type(5) {
+    font-size: 9px;
+    color: #aaa;
+    transform: translate(45px, -19px);
+
+}
+
+/* .item-container>div>img:nth-of-type(2) {
+    transform: translate(232px, -48px);
+    border: 10px solid rgb(235, 239, 246);
+    border-radius: 50%;
+    background-color: rgb(235, 239, 246);
+    filter: hue-rotate(218) saturate(37.9) brightness(94.3);
+
+
+
+} */
+.img-container {
+    transform: translate(240px, -45px);
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EBEFF6;
+
+
+}
+
+.img-container>img {
+    filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(230deg) brightness(103%) contrast(106%);
+}
+
+
+.img-container:hover {
+    background-color: #49556B;
+
+}
+
+
+img-container-options {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.options {
+    background-color: rgb(73, 85, 107);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding-top: 5px;
+
+}
+
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    margin-left: 83px;
+    transform: translate(0px, -1px);
+    border-top: 9px solid rgb(73, 85, 107);
+
+
+}
+
+
+.options>span:first-of-type {
+    margin-left: 35px;
+    color: white;
+}
+
+.options>span:nth-child(2)>img {
+    margin-left: 8px;
+
+}
+
+.options-container {
+    transform: translate(376px, -145px) !important;
+    visibility: hidden;
+
+
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 0px) and (max-width: 416px) {
+    .item-container {
+        width: 298px !important;
+        height: 510px !important;
+        margin-inline: auto !important;
+    }
+
+    .item-container>img:first-of-type {
+        transform: translate(-1px, 0px);
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+
+    }
+
+    .options-container {
+
+        transform: translate(1px, -52px) !important;
+
+        visibility: hidden;
+
+
+
+    }
+
+    .options {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 298px;
+        height: 53px;
+        padding-top: 11px;
+    }
+
+    .img-container-options {
+        background-color: #A4A8BB;
+        margin-left: 81px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+
+
+    P:first-of-type,
+    p:nth-of-type(1),
+    p:nth-of-type(2),
+    p:nth-of-type(3),
+    p:nth-of-type(4) {
+        font-size: 11px;
+    }
+
+    .imag-container-options {
+        display: block;
+    }
+
+
+
+    p:nth-of-type(3) {
+        margin-bottom: 64px;
+
+    }
+}
+
+@media screen and (min-width: 539px) and (max-width : 1023px) {
+    .item-container {
+        display: inline-block;
+        transform: translate(30%, 255px);
+    }
+}
